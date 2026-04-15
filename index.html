@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethereal Techno Collection — Final</title>
+  <meta name="description" content="Финальная одностраничная коллекция Ethereal Techno в стиле Steyoyoke Recordings: плейлист, миксы и релизы." />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(.75rem,.7rem + .25vw,.875rem);
+      --text-sm: clamp(.875rem,.8rem + .35vw,1rem);
+      --text-base: clamp(1rem,.95rem + .25vw,1.125rem);
+      --text-lg: clamp(1.125rem,1rem + .75vw,1.5rem);
+      --text-xl: clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+      --text-2xl: clamp(2rem,1.2rem + 2.5vw,3.5rem);
+      --space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;
+      --color-bg:#f3efe6;--color-surface:#f7f2e9;--color-surface-2:#fcf8f0;--color-surface-offset:#e8e0d1;--color-border:#cfc4b2;--color-divider:#ddd3c2;
+      --color-text:#17130f;--color-text-muted:#5e564b;--color-text-faint:#928777;--color-text-inverse:#f7f2ea;
+      --color-primary:#a88b5a;--color-primary-hover:#8f754b;--color-primary-highlight:rgba(168,139,90,.14);
+      --shadow-sm:0 1px 2px rgba(20,20,20,.06);--shadow-md:0 20px 40px rgba(20,20,20,.1);
+      --radius-lg:1rem;--radius-xl:1.5rem;--radius-full:9999px;
+      --content-default:1180px;
+      --font-display:'Boska', Georgia, serif;
+      --font-body:'General Sans', Inter, sans-serif;
+    }
+    [data-theme="dark"] {
+      --color-bg:#050505;--color-surface:#0c0c0c;--color-surface-2:#111111;--color-surface-offset:#171717;--color-border:#232323;--color-divider:#1b1b1b;
+      --color-text:#efe9dc;--color-text-muted:#b3ab9d;--color-text-faint:#7e7565;--color-text-inverse:#080808;
+      --color-primary:#c1a36d;--color-primary-hover:#d5bb8a;--color-primary-highlight:rgba(193,163,109,.11);
+      --shadow-sm:0 2px 4px rgba(0,0,0,.35);--shadow-md:0 28px 60px rgba(0,0,0,.55);
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100dvh;background:radial-gradient(circle at top, rgba(193,163,109,.08), transparent 24%),linear-gradient(180deg,#090909 0%,#050505 35%,#070707 100%);color:var(--color-text);font:var(--text-base)/1.65 var(--font-body);letter-spacing:.01em}a{color:inherit;text-decoration:none}button{font:inherit;background:none;border:none;color:inherit}
+    .skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;z-index:1000;background:var(--color-primary);color:var(--color-text-inverse);padding:.75rem 1rem;border-radius:var(--radius-full)}
+    .shell{width:min(calc(100% - 2rem),var(--content-default));margin-inline:auto}.topbar{position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.04);backdrop-filter:blur(20px);background:rgba(5,5,5,.78)}.topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3)}.logo{width:42px;height:42px;padding:8px;border-radius:50%;background:var(--color-primary-highlight);color:var(--color-primary)}.brand-copy strong{display:block;font-size:var(--text-sm);letter-spacing:.18em;text-transform:uppercase}.brand-copy span{display:block;color:var(--color-text-muted);font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase}
+    .nav{display:flex;flex-wrap:wrap;gap:var(--space-2);align-items:center;justify-content:flex-end}.nav a,.theme-toggle{min-height:44px;padding:.72rem 1rem;border:1px solid var(--color-border);border-radius:var(--radius-full);background:rgba(255,255,255,.015);color:var(--color-text-muted)}
+    .hero{padding:clamp(4rem,8vw,8rem) 0 var(--space-12);position:relative;overflow:hidden}.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 20%, rgba(193,163,109,.13), transparent 22%),linear-gradient(180deg, rgba(193,163,109,.05), transparent 36%);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:var(--space-8);align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:.55rem;padding:.52rem .92rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);border:1px solid rgba(193,163,109,.12);color:var(--color-primary);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.18em}
+    h1,h2,h3{margin:0;line-height:1.02}h1{font-family:var(--font-display);font-size:var(--text-2xl);max-width:10ch;text-transform:uppercase;letter-spacing:.05em}p{margin:0}.lead{max-width:58ch;color:var(--color-text-muted);margin-top:var(--space-4)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.92rem 1.15rem;border-radius:var(--radius-full);border:1px solid var(--color-border);background:rgba(255,255,255,.018);color:var(--color-text)}.btn.primary{background:var(--color-primary);border-color:var(--color-primary);color:var(--color-text-inverse)}
+    .manifesto{margin-top:var(--space-8);padding-top:var(--space-6);border-top:1px solid rgba(193,163,109,.14);max-width:62ch}.manifesto p{color:var(--color-text-faint);text-transform:uppercase;letter-spacing:.16em;font-size:var(--text-xs)}
+    .hero-object{position:relative;min-height:480px;border-radius:34px;overflow:hidden;border:1px solid rgba(193,163,109,.16);background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));box-shadow:var(--shadow-md)}
+    .hero-rings{position:absolute;inset:0;display:grid;place-items:center}
+    .ring{position:absolute;border:1px solid rgba(193,163,109,.22);border-radius:50%}
+    .ring.one{width:78%;height:78%}.ring.two{width:52%;height:52%}.ring.three{width:26%;height:26%}
+    .axis{position:absolute;width:2px;height:82%;background:linear-gradient(180deg, transparent, rgba(193,163,109,.22), transparent);transform:rotate(32deg)}
+    .axis.second{transform:rotate(-32deg)}
+    .hero-plaque{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(72%,360px);padding:1.25rem;border-radius:22px;background:rgba(5,5,5,.78);border:1px solid rgba(193,163,109,.16);text-align:center;backdrop-filter:blur(14px)}
+    .hero-plaque strong{display:block;font-family:var(--font-display);font-size:var(--text-xl);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.4rem}.hero-plaque span{display:block;color:var(--color-text-muted);font-size:var(--text-xs);letter-spacing:.14em;text-transform:uppercase}
+    main section{padding:var(--space-8) 0}.section-head{display:flex;justify-content:space-between;gap:var(--space-4);align-items:end;margin-bottom:var(--space-6)}.section-head p{color:var(--color-text-muted);max-width:60ch}
+    .playlist-layout,.mix-grid,.cards{display:grid;gap:var(--space-6)}.playlist-layout{grid-template-columns:1.15fr .85fr}.mix-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .panel,.mix-card,.release,.footer-box{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid var(--color-border);border-radius:30px;box-shadow:var(--shadow-sm)}
+    .panel,.mix-card{padding:var(--space-5)}.panel-title{display:block;color:var(--color-text-faint);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.16em;margin-bottom:var(--space-4)}
+    .playlist-frame,.player-frame{position:relative;border-radius:20px;overflow:hidden;border:1px solid rgba(193,163,109,.14);background:#000;aspect-ratio:16/9}.playlist-frame iframe,.player-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .quick-list,.link-list,.tracklist{display:grid;gap:var(--space-3)}.quick-list a,.link-list a{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:1rem;background:var(--color-surface-offset);border:1px solid var(--color-border);border-radius:18px}
+    .mix-card h3{margin-bottom:1rem;font-family:var(--font-display);letter-spacing:.04em;text-transform:uppercase}
+    .release{overflow:hidden}.release-top{display:grid;grid-template-columns:1fr auto;gap:var(--space-4);padding:var(--space-6);border-bottom:1px solid rgba(255,255,255,.05)}.release-kicker{display:inline-flex;gap:.5rem;align-items:center;color:var(--color-primary);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.16em;margin-bottom:var(--space-3)}.release h2{font-family:var(--font-display);font-size:var(--text-xl);text-transform:uppercase;letter-spacing:.05em}.release p{color:var(--color-text-muted);margin-top:.65rem;max-width:65ch}.pill{align-self:start;padding:.62rem .88rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);border:1px solid rgba(193,163,109,.14);color:var(--color-primary);font-size:var(--text-xs);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+    .release-body{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--space-6);padding:var(--space-6)}.track{display:grid;grid-template-columns:2.4rem 1fr;gap:var(--space-3);padding:.78rem .9rem;border-radius:16px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.03)}.track-num{color:var(--color-text-faint);font-size:var(--text-sm);font-variant-numeric:tabular-nums}.links-panel{padding:var(--space-5);background:rgba(255,255,255,.018);border:1px solid rgba(255,255,255,.04);border-radius:22px}
+    .footer{padding:var(--space-12) 0 var(--space-8)}.footer-box{padding:var(--space-6)}.footer-box p{color:var(--color-text-muted)}.footer-box small{display:block;margin-top:var(--space-3);color:var(--color-text-faint)}
+    @media (max-width:960px){.hero-grid,.playlist-layout,.mix-grid,.release-body{grid-template-columns:1fr}.release-top{grid-template-columns:1fr}.hero-object{min-height:340px}.nav{justify-content:flex-start}.pill{justify-self:flex-start}.release-body{gap:var(--space-4)}}
+    @media (max-width:640px){.shell{width:min(calc(100% - 1rem),var(--content-default))}.topbar{position:static}.topbar-inner{align-items:flex-start;flex-direction:column;padding:var(--space-3) 0}.brand{width:100%}.nav{width:100%;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap;padding-bottom:.25rem;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a,.theme-toggle{flex:0 0 auto;min-height:44px;padding:.72rem .95rem}.hero{padding:3.25rem 0 var(--space-8)}h1{max-width:12ch}.lead{font-size:var(--text-sm)}.hero-actions{width:100%;flex-direction:column;align-items:stretch}.btn{width:100%}.hero-object{min-height:280px;border-radius:26px}.hero-plaque{width:min(82%,300px);padding:1rem}.panel,.mix-card,.footer-box,.release-top,.release-body{padding:var(--space-4);border-radius:22px}.playlist-frame,.player-frame{border-radius:16px;aspect-ratio:16/10}.quick-list a,.link-list a{padding:.9rem;border-radius:15px}.track{grid-template-columns:1.8rem 1fr;gap:.7rem;padding:.72rem .78rem;border-radius:14px}.track div:last-child{font-size:var(--text-sm);line-height:1.45}.release h2{font-size:clamp(1.55rem,1.2rem + 1.9vw,2rem)}.gift-signature{display:block;text-align:left;margin-left:0}}
+    @media (max-width:420px){body{font-size:1rem}.shell{width:min(calc(100% - .75rem),var(--content-default))}.eyebrow{font-size:.72rem;padding:.45rem .72rem;letter-spacing:.14em}.hero-object{min-height:240px}.ring.one{width:86%;height:86%}.ring.two{width:58%;height:58%}.ring.three{width:30%;height:30%}.release-kicker,.pill{font-size:.7rem}.track{grid-template-columns:1.55rem 1fr}.track-num{font-size:.78rem}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Перейти к содержимому</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand" aria-label="Steyoyoke Recordings archive">
+        <svg class="logo" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="22" stroke="currentColor" stroke-width="3"></circle><path d="M18 32h28M32 18v28" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path><circle cx="32" cy="32" r="6" fill="currentColor"></circle></svg>
+        <div class="brand-copy"><strong>Steyoyoke Recordings</strong><span>Ethereal Techno Archive</span></div>
+      </div>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#playlist">Playlist</a>
+        <a href="#mixes">Mixes</a>
+        <a href="#r002">#002</a>
+        <a href="#r012">#012</a>
+        <a href="#r013">#013</a>
+        <a href="#r014">#014</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Переключить тему">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <div class="eyebrow">Music / Art / Experiences</div>
+          <h1>Ethereal Techno collection</h1>
+          <p class="lead">Коллекция Ethereal Techno в тёмной минималистичной подаче: строгая типографика, геометрический hero‑блок и акцент на релизах, миксах и атмосфере лейбла.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#playlist">Play playlist</a>
+            <a class="btn" href="#mixes">Open mixes</a>
+          </div>
+          <div class="manifesto">
+            <p>Atmospheric. Emotive. Hypnotic. Ethereal Techno.</p>
+          </div>
+        </div>
+        <div class="hero-object" aria-hidden="true">
+          <div class="hero-rings">
+            <div class="ring one"></div>
+            <div class="ring two"></div>
+            <div class="ring three"></div>
+            <div class="axis"></div>
+            <div class="axis second"></div>
+            <div class="hero-plaque">
+              <strong>SYYK</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="playlist">
+      <div class="shell">
+        <div class="section-head"><div><h2 style="font-family:var(--font-display);font-size:var(--text-xl);text-transform:uppercase;letter-spacing:.05em">Playlist</h2><p>Steyoyoke связывает музыку, визуальный язык и бренд‑идентичность, поэтому общий плейлист остаётся главной точкой входа для прослушивания. </p></div></div>
+        <div class="playlist-layout">
+          <article class="panel">
+            
+            <div class="playlist-frame"><iframe src="https://www.youtube.com/embed/videoseries?list=PLQd-kXttIW9NETRhvQ8VmDzWENQaSxZGV" title="Ethereal Techno playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </article>
+          <article class="panel">
+            
+            <div class="quick-list">
+              <a href="https://www.youtube.com/playlist?list=PLQd-kXttIW9NETRhvQ8VmDzWENQaSxZGV" target="_blank" rel="noopener noreferrer"><span>Ethereal Techno playlist</span><span>↗</span></a>
+              <a href="https://www.youtube.com/playlist?list=PLQd-kXttIW9M9F5krFJBjpAcR8zQH7Rsw" target="_blank" rel="noopener noreferrer"><span>Steyoyoke DJ Mixes</span><span>↗</span></a>
+              <a href="https://www.youtube.com/@etherealtechno/playlists" target="_blank" rel="noopener noreferrer"><span>Ethereal Techno playlists</span><span>↗</span></a>
+              <a href="https://www.youtube.com/c/EtherealTechno" target="_blank" rel="noopener noreferrer"><span>Ethereal Techno channel</span><span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mixes">
+      <div class="shell">
+        <div class="section-head"><div><h2 style="font-family:var(--font-display);font-size:var(--text-xl);text-transform:uppercase;letter-spacing:.05em">Mixes</h2><p>Подтверждённые continuous mixes серии Ethereal Techno по‑прежнему встроены в страницу для быстрого прослушивания. </p></div></div>
+        <div class="mix-grid">
+          <article class="mix-card"><h3>Soul Button</h3><div class="player-frame"><iframe src="https://www.youtube.com/embed/6Ryg6cpc4hQ" title="Ethereal Techno #012 continuous mix" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></article>
+          <article class="mix-card"><h3>Clawz SG</h3><div class="player-frame"><iframe src="https://www.youtube.com/embed/FOtgFW9HPlE" title="Ethereal Techno #013 continuous mix" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></article>
+          <article class="mix-card"><h3>Soul Button</h3><div class="player-frame"><iframe src="https://www.youtube.com/embed/8unpmiWpS9E" title="Ethereal Techno #014 continuous mix" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></article>
+          <article class="mix-card"><h3>Voices Of Valley</h3><div class="quick-list"><a href="https://www.youtube.com/watch?v=1zrn6vgAA6M" target="_blank" rel="noopener noreferrer"><span>YouTube mix</span><span>↗</span></a><a href="https://soundcloud.com/steyoyoke/sets/v-a-ethereal-techno-002" target="_blank" rel="noopener noreferrer"><span>SoundCloud set</span><span>↗</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell">
+        <div class="section-head"><div><h2 style="font-family:var(--font-display);font-size:var(--text-xl);text-transform:uppercase;letter-spacing:.05em">Releases</h2><p>Steyoyoke определяет себя через Ethereal Techno sound, атмосферу и сильный брендинг, поэтому карточки релизов оставлены как тёмные архивные панели. </p></div></div>
+        <div class="cards">
+          <article class="release" id="r002"><div class="release-top"><div><div class="release-kicker">SYYKET002</div><h2>Ethereal Techno #002</h2><p>Релиз Steyoyoke от 6 июня 2016 года, 13 треков.</p></div><div class="pill">13 tracks</div></div><div class="release-body"><div class="tracklist"><div class="track"><div class="track-num">01</div><div>Innellea – Galagant (Dahu Remix)</div></div><div class="track"><div class="track-num">02</div><div>Nick Devon – Metis</div></div><div class="track"><div class="track-num">03</div><div>Dahu &amp; MPathy – Shattered (Jonas Saalbach Remix)</div></div><div class="track"><div class="track-num">04</div><div>Tom Peters – Two Of Us</div></div><div class="track"><div class="track-num">05</div><div>Animal Picnic – Ethorica</div></div><div class="track"><div class="track-num">06</div><div>Nick Devon &amp; Ran Salman – Torque</div></div><div class="track"><div class="track-num">07</div><div>Animal Picnic &amp; Ran Salman – Mind Maze</div></div><div class="track"><div class="track-num">08</div><div>Innellea – Obsidian</div></div><div class="track"><div class="track-num">09</div><div>Craig Pruess feat. Ananda – Lalitha Ashtotram (Audio Junkies &amp; Sahar Z Remix)</div></div><div class="track"><div class="track-num">10</div><div>Bêtise – Solum</div></div><div class="track"><div class="track-num">11</div><div>Soul Button – Wraith feat. Terry Grant (Animal Picnic Remix)</div></div><div class="track"><div class="track-num">12</div><div>Aaryon &amp; Ran Salman – Riptide (Philipp Kempnich Remix)</div></div><div class="track"><div class="track-num">13</div><div>Mallone – Maelstrom</div></div></div><div><div class="links-panel"><div class="link-list"><a href="https://www.youtube.com/watch?v=1zrn6vgAA6M" target="_blank" rel="noopener noreferrer"><span>YouTube mix</span><span>↗</span></a><a href="https://soundcloud.com/steyoyoke/sets/v-a-ethereal-techno-002" target="_blank" rel="noopener noreferrer"><span>SoundCloud set</span><span>↗</span></a><a href="https://www.beatport.com/release/ethereal-techno-002/1769385" target="_blank" rel="noopener noreferrer"><span>Beatport</span><span>↗</span></a><a href="https://www.traxsource.com/title/625569/ethereal-techno-002" target="_blank" rel="noopener noreferrer"><span>Traxsource</span><span>↗</span></a></div></div></div></div></article>
+          <article class="release" id="r012"><div class="release-top"><div><div class="release-kicker">SYYKET012</div><h2>Ethereal Techno #012</h2><p>Релиз Steyoyoke от 7 октября 2022 года, 28 треков.</p></div><div class="pill">28 tracks</div></div><div class="release-body"><div class="tracklist"><div class="track"><div class="track-num">01</div><div>Victor Amaya &amp; Diazar – El Despertar</div></div><div class="track"><div class="track-num">02</div><div>Galø – Surreal</div></div><div class="track"><div class="track-num">03</div><div>Fakdem &amp; Masella – Synergy</div></div><div class="track"><div class="track-num">04</div><div>Singolarità – Euphoria</div></div><div class="track"><div class="track-num">05</div><div>Daniel Blade – Paradise</div></div><div class="track"><div class="track-num">06</div><div>Erdinc Akbulut – I'm In Love</div></div><div class="track"><div class="track-num">07</div><div>Martín Dubiansky – Elium</div></div><div class="track"><div class="track-num">08</div><div>Mike Seven – Parallel Lives</div></div><div class="track"><div class="track-num">09</div><div>Monarke – Bridge of Eternity feat. Jessica Zese (Ege Yanik Remix)</div></div><div class="track"><div class="track-num">10</div><div>Lost Rhythm – Aetheria</div></div><div class="track"><div class="track-num">11</div><div>Zieze – Resilencia</div></div><div class="track"><div class="track-num">12</div><div>Karim Zidan – Adrenaline</div></div><div class="track"><div class="track-num">13</div><div>ArshiyaZi – Rip The Time (Sahab Remix)</div></div><div class="track"><div class="track-num">14</div><div>Santiago Celasso – Dialect</div></div><div class="track"><div class="track-num">15</div><div>Øntold &amp; Khaled Abdrabo – Enzyme</div></div><div class="track"><div class="track-num">16</div><div>Soul Button – Merine (Morttagua Remix)</div></div><div class="track"><div class="track-num">17</div><div>Something Else – Breathe</div></div><div class="track"><div class="track-num">18</div><div>Ege Yanik – Eclipse</div></div><div class="track"><div class="track-num">19</div><div>ArshiyaZi – Rip The Time</div></div><div class="track"><div class="track-num">20</div><div>Lost Rhythm – Aetheria (MPathy Remix)</div></div><div class="track"><div class="track-num">21</div><div>Haffenfold – Eternal Winters</div></div><div class="track"><div class="track-num">22</div><div>Monarke – Miniatiure World (Nick Devon Remix)</div></div><div class="track"><div class="track-num">23</div><div>MPathy – Coax</div></div><div class="track"><div class="track-num">24</div><div>Chris Mørgan – No</div></div><div class="track"><div class="track-num">25</div><div>Kadhem – Phantom</div></div><div class="track"><div class="track-num">26</div><div>Jecksel – Einherjar</div></div><div class="track"><div class="track-num">27</div><div>Santiago Celasso – Aristas</div></div><div class="track"><div class="track-num">28</div><div>Jaen Paniagua, 2up – Nebula</div></div></div><div><div class="links-panel"><div class="link-list"><a href="https://www.youtube.com/watch?v=6Ryg6cpc4hQ" target="_blank" rel="noopener noreferrer"><span>YouTube mix</span><span>↗</span></a><a href="https://soundcloud.com/steyoyoke/sets/ethereal-techno-012" target="_blank" rel="noopener noreferrer"><span>SoundCloud set</span><span>↗</span></a><a href="https://steyoyoke.bandcamp.com/album/ethereal-techno-012" target="_blank" rel="noopener noreferrer"><span>Bandcamp</span><span>↗</span></a><a href="https://open.spotify.com/album/2pXDD91OQmHEqYh89xPkFx" target="_blank" rel="noopener noreferrer"><span>Spotify</span><span>↗</span></a></div></div></div></div></article>
+          <article class="release" id="r013"><div class="release-top"><div><div class="release-kicker">SYYKET013</div><h2>Ethereal Techno #013</h2><p>Релиз Steyoyoke от 14 апреля 2023 года, 18 треков.</p></div><div class="pill">18 tracks</div></div><div class="release-body"><div class="tracklist"><div class="track"><div class="track-num">01</div><div>Senses Of Mind – Connected</div></div><div class="track"><div class="track-num">02</div><div>Amir Telem – Radhika</div></div><div class="track"><div class="track-num">03</div><div>Gus (MT) – Entity</div></div><div class="track"><div class="track-num">04</div><div>Khaled Abdrabo – Dadirri</div></div><div class="track"><div class="track-num">05</div><div>Haffenfold – Half Hunter</div></div><div class="track"><div class="track-num">06</div><div>PETEL – Whales Serenade</div></div><div class="track"><div class="track-num">07</div><div>Masella – Sitara</div></div><div class="track"><div class="track-num">08</div><div>Olivier Weiter – Lau (Soul Button Remix)</div></div><div class="track"><div class="track-num">09</div><div>Unseen. &amp; Øntold – Haunting</div></div><div class="track"><div class="track-num">10</div><div>2Qimic – Ancient</div></div><div class="track"><div class="track-num">11</div><div>Thomas Schwartz &amp; Fausto Fanizza feat. Phoebe Tsen – Winter Fields (Nick Devon Remix)</div></div><div class="track"><div class="track-num">12</div><div>Faraday (ITA) – Tabitha</div></div><div class="track"><div class="track-num">13</div><div>Something Else – Breathe (MPathy Remix)</div></div><div class="track"><div class="track-num">14</div><div>2Qimic – Backroom (MPathy Remix)</div></div><div class="track"><div class="track-num">15</div><div>Michael Warren (PL) – Cold Lie</div></div><div class="track"><div class="track-num">16</div><div>Monarke – Deja Vu</div></div><div class="track"><div class="track-num">17</div><div>Browncoat – Passport</div></div><div class="track"><div class="track-num">18</div><div>Michael Warren (PL) – D.M.X</div></div></div><div><div class="links-panel"><div class="link-list"><a href="https://www.youtube.com/watch?v=FOtgFW9HPlE" target="_blank" rel="noopener noreferrer"><span>YouTube mix</span><span>↗</span></a><a href="https://soundcloud.com/etherealtechno/ethereal-techno-013-continuous-mix-by-clawz-sg" target="_blank" rel="noopener noreferrer"><span>SoundCloud mix</span><span>↗</span></a><a href="https://steyoyoke.bandcamp.com/album/ethereal-techno-013" target="_blank" rel="noopener noreferrer"><span>Bandcamp</span><span>↗</span></a><a href="https://open.spotify.com/album/0fbLhnaJQk0WMw9Xu08W81" target="_blank" rel="noopener noreferrer"><span>Spotify</span><span>↗</span></a></div></div></div></div></article>
+          <article class="release" id="r014"><div class="release-top"><div><div class="release-kicker">SYYKET014</div><h2>Ethereal Techno #014</h2><p>Релиз Steyoyoke от 19 января 2024 года, 21 трек.</p></div><div class="pill">21 tracks</div></div><div class="release-body"><div class="tracklist"><div class="track"><div class="track-num">01</div><div>Monarke &amp; Soul Button – Forgotten Years</div></div><div class="track"><div class="track-num">02</div><div>Senses Of Mind – Dream Sequence</div></div><div class="track"><div class="track-num">03</div><div>Larrosa (AR) &amp; Martin Tolosa – Madness</div></div><div class="track"><div class="track-num">04</div><div>EVERI – Timeless</div></div><div class="track"><div class="track-num">05</div><div>Blotho – Art And People</div></div><div class="track"><div class="track-num">06</div><div>Monarke – Narrow</div></div><div class="track"><div class="track-num">07</div><div>Nick Devon – Meteor</div></div><div class="track"><div class="track-num">08</div><div>Navid Kaya – Halfway</div></div><div class="track"><div class="track-num">09</div><div>Morttagua – Yahyel</div></div><div class="track"><div class="track-num">10</div><div>Soul Button – Walking Straight Up (Alexey Union Remix)</div></div><div class="track"><div class="track-num">11</div><div>Stan Kolev &amp; Morttagua – Ainanna</div></div><div class="track"><div class="track-num">12</div><div>Night Stories – Monolyth</div></div><div class="track"><div class="track-num">13</div><div>Olivier Weiter – Diversum</div></div><div class="track"><div class="track-num">14</div><div>Clawz SG – Specter (Night Stories Remix)</div></div><div class="track"><div class="track-num">15</div><div>Germán Case – Synderesis (Law Of Physics Remix)</div></div><div class="track"><div class="track-num">16</div><div>Aquiver – Irenic</div></div><div class="track"><div class="track-num">17</div><div>Furkan Cinar – Aglow (Monarke Remix)</div></div><div class="track"><div class="track-num">18</div><div>Santiago Celasso – The Ritual</div></div><div class="track"><div class="track-num">19</div><div>Browncoat – Ghost Machina</div></div><div class="track"><div class="track-num">20</div><div>Aquiver – Meraki</div></div><div class="track"><div class="track-num">21</div><div>Cary Crank – Lost Highway</div></div></div><div><div class="links-panel"><div class="link-list"><a href="https://www.youtube.com/watch?v=8unpmiWpS9E" target="_blank" rel="noopener noreferrer"><span>YouTube mix</span><span>↗</span></a><a href="https://soundcloud.com/steyoyoke/sets/va-ethereal-techno-014-syyket014-steyoyoke" target="_blank" rel="noopener noreferrer"><span>SoundCloud set</span><span>↗</span></a><a href="https://www.steyoyoke.com" target="_blank" rel="noopener noreferrer"><span>Steyoyoke</span><span>↗</span></a></div></div></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell footer">
+        <div class="footer-box">
+                    
+          <div class="gift-signature" aria-label="Gift message"><span>I hope I was able to give you a charge of emotions — I.Bovt</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function(){const btn=document.querySelector('[data-theme-toggle]');const root=document.documentElement;let theme=root.getAttribute('data-theme')||'dark';const render=()=>{btn.textContent=theme==='dark'?'☀':'☾';btn.setAttribute('aria-label',theme==='dark'?'Переключить на светлую тему':'Переключить на тёмную тему')};render();btn.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';root.setAttribute('data-theme',theme);render();});})();
+  </script>
+</body>
+</html>
